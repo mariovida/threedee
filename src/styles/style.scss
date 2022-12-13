@@ -7,6 +7,7 @@
 @import './molecules/hero.scss';
 @import './molecules/free-shipping.scss';
 @import './molecules/welcome.scss';
+@import './molecules/about-us.scss';
 @import './molecules/categories.scss';
 @import './molecules/explore.scss';
 
@@ -30,9 +31,9 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
 	background-color: $c-7;
 }
-section {
+/*section {
     margin: 60px 0;
-}
+}*/
 i {
     font-size: 18px;
     margin-right: 8px;
@@ -56,13 +57,14 @@ i {
         display: block;
         align-self: flex-end;
         height: 100%;
-        font-size: $fs-16;
+        font-size: $fs-14;
         letter-spacing: 1px;
         text-decoration: none;
-        padding: 11px 16px;
+        padding: 8px 16px;
         color: $c-7;
         background-color: transparent;
         border: 1px solid $c-7;
+        border-radius: 21px;
         cursor: pointer;
         transition: 0.2s;
 
@@ -95,7 +97,6 @@ p {
     }
     .header-row {
         a {
-            font-size: $fs-14;
             padding: 8px 16px;
         }
     }

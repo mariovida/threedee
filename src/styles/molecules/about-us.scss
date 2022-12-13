@@ -1,5 +1,6 @@
-.welcome {
+.about-us {
     width: 100%;
+    margin: 60px 0;
 
     .wrapper {
         display: flex;
@@ -7,22 +8,11 @@
     }
 
     &-left {
-        width: 40%;
-
-        img {
-            width: 100%;
-            height: 99%;
-            object-fit: contain;
-        }
-    }
-
-    &-right {
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        padding: 40px 0;
 
         h4 {
             font-size: $fs-42;
@@ -60,26 +50,37 @@
             }
         }
     }
+
+    &-right {
+        width: 40%;
+        margin-left: 5%;
+
+        img {
+            width: 100%;
+            height: 99%;
+            object-fit: contain;
+        }
+    }
 }
 
 @media screen and (max-width: 960px) {
-    .welcome {
-        &-right {
+    .about-us {
+        &-left {
             width: 60%;
     
             h4 {
                 font-size: $fs-32;
             }
         }
+
+        &-right {
+            margin-left: 0;
+        }
     }
 }
 @media screen and (max-width: 768px) {
-    .welcome {
+    .about-us {
         &-left {
-            display: none;
-        }
-    
-        &-right {
             width: 100%;
     
             a {
@@ -87,6 +88,10 @@
                 font-size: $fs-14;
                 padding: 8px 24px;
             }
+        }
+    
+        &-right {
+            display: none;
         }
     }
 }
