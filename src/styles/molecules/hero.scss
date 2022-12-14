@@ -60,6 +60,14 @@
 @media screen and (max-width: 960px) {
     .hero {
         height: 600px;
+
+        &-small {
+            height: 180px;
+    
+            .wrapper {
+                height: 180px;
+            }
+        }
     }
 }
 @media screen and (max-width: 768px) {
