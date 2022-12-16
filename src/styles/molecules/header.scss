@@ -4,6 +4,7 @@ nav {
     position: relative;
     top: 0;
     z-index: 1;
+    background-color: $c-1;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 2px 3px -1px;
 
     .wrapper {
@@ -44,6 +45,9 @@ nav {
             }
         }
     }
+}
+.nav-scrolled {
+    position: fixed;
 }
 
 @media screen and (max-width: 768px) {

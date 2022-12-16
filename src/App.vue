@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav>
+    <nav id="header">
       <div class="wrapper">
         <div class="nav-logo"><img src="@/assets/brand-logo.svg" /></div>
         <div>
@@ -14,6 +14,24 @@
     <router-view/>
   </div>
 </template>
+
+<script>
+  export default {
+    methods: {
+      handleSCroll (event) {
+        let header = document.querySelector("#header");
+        if (window.scrollY > 400) {
+          header.classList.add("nav-scrolled");          
+        } else {
+          header.classList.remove("nav-scrolled");
+        }
+      }
+    },
+    created () {
+      window.addEventListener('scroll', this.handleSCroll);
+    },
+  }
+</script>
 
 <style>
 </style>
