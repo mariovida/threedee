@@ -44,7 +44,8 @@
     </section>
 
     <section class="explore">
-
+     
+      <img src="@/assets/explore.png" />
     </section>
   </div>
 </template>

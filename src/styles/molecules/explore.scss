@@ -1,9 +1,19 @@
 .explore {
-    position: relative;
     width: 100%;
-    height: 400px;
-    background-image: url('@/assets/heroo.jpg');
-    background-position: right;
-    background-size: cover;
-    background-repeat: no-repeat;
+    overflow: visible;
+
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .explore {
+        img {
+            height: 300px;
+            object-position: right;
+        }
+    }
 }
