@@ -9,7 +9,7 @@
 
     <section class="free-shipping">
       <div class="wrapper">
-        <p>Curabitur velaris dolor, vulputate ut tortor velos.</p>
+        <p>Bringing your ideas to life with stunning 3D designs.</p>
       </div>
     </section>
 

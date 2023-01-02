@@ -54,3 +54,38 @@
         }
     }
 }
+
+@media screen and (max-width: 960px) {
+    .welcome {
+    
+        &-right {
+            width: 60%;
+            height: 550px;
+    
+            h4 {
+                font-size: $fs-32;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .welcome {
+        height: unset;
+
+        &-left {
+            display: none;
+        }
+    
+        &-right {
+            width: 100%;
+            height: unset;
+            padding: 40px 0;
+    
+            a {
+                align-self: center;
+                font-size: $fs-14;
+                padding: 8px 24px;
+            }
+        }
+    }
+}
