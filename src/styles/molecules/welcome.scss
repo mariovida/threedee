@@ -1,12 +1,14 @@
 .welcome {
     width: 100%;
-    height: 550px;
     margin-top: 0;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
 
     &-left {
         width: 40%;
-        height: 550px;
-        float: left;
 
         img {
             width: 100%;
@@ -17,12 +19,11 @@
 
     &-right {
         width: 50%;
-        height: 550px;
-        float: left;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        padding: 40px 0;
 
         h4 {
             font-size: $fs-42;
@@ -35,6 +36,8 @@
         }
 
         a {
+            display: flex;
+            align-items: center;
             align-self: flex-end;
             font-size: $fs-16;
             letter-spacing: 1px;
@@ -43,7 +46,7 @@
             padding: 8px 16px;
             color: $c-7;
             background-color: transparent;
-            border: 2px solid $c-7;
+            border: 1px solid $c-7;
             cursor: pointer;
             transition: 0.2s;
 
@@ -57,10 +60,8 @@
 
 @media screen and (max-width: 960px) {
     .welcome {
-    
         &-right {
             width: 60%;
-            height: 550px;
     
             h4 {
                 font-size: $fs-32;
@@ -70,16 +71,12 @@
 }
 @media screen and (max-width: 768px) {
     .welcome {
-        height: unset;
-
         &-left {
             display: none;
         }
     
         &-right {
             width: 100%;
-            height: unset;
-            padding: 40px 0;
     
             a {
                 align-self: center;
