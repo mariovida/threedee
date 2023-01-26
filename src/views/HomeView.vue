@@ -8,7 +8,7 @@
 
     <section class="free-shipping">
       <div class="wrapper">
-        <p>Curabitur mauris dolor, vulputate ut tortor velos.</p>
+        <p>Curabitur velaris dolor, vulputate ut tortor velos.</p>
       </div>
     </section>
 
