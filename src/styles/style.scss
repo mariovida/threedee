@@ -1,0 +1,54 @@
+@import './fonts.scss';
+@import './colors.scss';
+
+@import './molecules/header.scss';
+@import './molecules/hero.scss';
+@import './molecules/free-shipping.scss';
+@import './molecules/categories.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: $c-1;
+    font-family: ff-primary;
+    color: $c-6;
+}
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: $c-1;
+}
+
+body::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: $c-1;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: $c-7;
+}
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: $fs-48;
+    color: $c-1;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: $fs-28;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: $fs-16;
+    }
+}

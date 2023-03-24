@@ -2,7 +2,7 @@
   <div>
     <section class="hero-small hero-about">
       <div class="wrapper">
-        <h2>About us</h2>
+        <h2>Contact</h2>
       </div>
     </section>
   </div>
@@ -11,7 +11,7 @@
 <script>
   export default {
     created(){
-        document.title = "About Us - ThreeDee Agency"
+        document.title = "Contact - ThreeDee Agency"
     }
   }
 </script>

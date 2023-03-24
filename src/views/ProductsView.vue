@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section class="hero-small hero-about">
+    <section class="hero-small hero-products">
       <div class="wrapper">
-        <h2>About us</h2>
+        <h2>Products</h2>
       </div>
     </section>
   </div>
@@ -11,7 +11,7 @@
 <script>
   export default {
     created(){
-        document.title = "About Us - ThreeDee Agency"
+        document.title = "Products - ThreeDee Agency"
     }
   }
 </script>
